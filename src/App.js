@@ -5,7 +5,7 @@ import Footer from './app/main/Footer/Footer'
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col h-full">
       <Navbar/>
       <ContentPage/>
       <Footer/>

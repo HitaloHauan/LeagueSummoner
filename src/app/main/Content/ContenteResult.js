@@ -141,7 +141,7 @@ function ContentPage({ dataRanked, dataSummoner, dataMastery }) {
 
     return (
         <React.Fragment>
-            <div className="flex flex-col w-full align-center justify-center">
+            <div className="flex flex-col w-full align-center justify-center pb-24">
                 <div className="flex flex-col items-center">
                     
 
