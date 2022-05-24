@@ -34,7 +34,7 @@ const ContentPage = () => {
     const [dataMastery, setDataMastery] = useState([])
     const [values, setValues] = React.useState({
         nickname: '',
-          contry: '',
+          contry: 'BR',
     });
 
     /*     const handleChange = (event) => {
@@ -89,7 +89,7 @@ const ContentPage = () => {
                 <div className="flex flex-col pt-32 items-center flex-wrap">
 
                     <div className="flex flex-row align-center justify-center mb-16 flex-wrap" >
-                        <Typography variant="h4" className="pr-2 uppercase" >Inform your</Typography>
+                        <Typography variant="h4" className="pr-2 uppercase" >Informe seu</Typography>
                         <Typography variant='h4' fontWeight={600} className="text-red uppercase" >Nickname</Typography>
                     </div>
 
@@ -99,7 +99,7 @@ const ContentPage = () => {
                             <TextField
                                 style={{minWidth: 290}}
                                 id="outlined-basic" 
-                                label="Your Nickname" 
+                                label="SEU NICKNAME" 
                                 variant="outlined" 
                                 value={values.nickname}
                                 onChange={handleChangeValue('nickname')}
@@ -110,7 +110,7 @@ const ContentPage = () => {
                         <div style={{width: 290}} className="flex w-100 justify-between">
 
                             <FormControl className="">
-                                <InputLabel id="demo-simple-select-label">Your Contry</InputLabel>
+                                <InputLabel id="demo-simple-select-label">Seu País</InputLabel>
                                 <Select
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
@@ -118,6 +118,7 @@ const ContentPage = () => {
                                 label="Your Contry"
                                 onChange={handleChangeValue('contry')}
                                 style={{width:180}}
+                                disabled
                                 >
                                 <MenuItem value='BR'>BR</MenuItem>
                                 <MenuItem value='EUW'>EUW</MenuItem>
@@ -131,7 +132,7 @@ const ContentPage = () => {
                                 size={"large"}
                                 onClick={()=>sumitSummoner()}
                             >
-                                Summit
+                                Buscar
                             </ColorButton>
                         </div>
                         

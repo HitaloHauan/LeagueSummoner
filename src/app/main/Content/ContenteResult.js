@@ -172,7 +172,7 @@ function ContentPage({ dataRanked, dataSummoner, dataMastery }) {
                     <div className="flex flex-col items-center justify-center pt-10 pb-10 flex-wrap w-full">
 
                         <div className="flex items-center justify-center flex-wrap">
-                            <Typography variant="h4" className="pt-2 pr-2 uppercase"  style={{fontWeight: 800, color:'#f44336'}}>masterys</Typography>
+                            <Typography variant="h4" className="pt-2 pr-2 uppercase"  style={{fontWeight: 800, color:'#f44336'}}>maestrias</Typography>
                         </div>
 
                         <div className="flex justify-center items-center pt-20 pb-36 flex-wrap">
@@ -195,7 +195,7 @@ function ContentPage({ dataRanked, dataSummoner, dataMastery }) {
                                     {validarMastery(dataMastery[1].championLevel)}
                                 </div>
                                 <Typography variant="h5" className="pt-2 pr-2 uppercase" style={{fontWeight: 800, color:'#f44336'}}>{validarChampName(dataMastery[1].championId)}</Typography>
-                                <Typography variant="h5" className="pt-2 pr-2" style={{fontWeight: 800, color:'#f44336'}}>{dataMastery[1].championPoints} pts</Typography>
+                                <Typography variant="h5" className="pt-2 pr-2" style={{fontWeight: 800, color:'#f44336'}}>{dataMastery[1].championPoints.toLocaleString()} pts</Typography>
                             </div>
 
                             <div style={{paddingBottom: 40}} className="flex flex-col items-center justify-center">
@@ -215,7 +215,7 @@ function ContentPage({ dataRanked, dataSummoner, dataMastery }) {
                                     {validarMastery(dataMastery[0].championLevel)}
                                 </div>
                                 <Typography variant="h5" className="pt-2 pr-2 uppercase" style={{fontWeight: 800, color:'#f44336'}}>{validarChampName(dataMastery[0].championId)}</Typography>
-                                <Typography variant="h5" className="pt-2 pr-2"  style={{fontWeight: 800, color:'#f44336'}}>{dataMastery[0].championPoints} pts</Typography>
+                                <Typography variant="h5" className="pt-2 pr-2"  style={{fontWeight: 800, color:'#f44336'}}>{dataMastery[0].championPoints.toLocaleString()} pts</Typography>
                             </div>
 
                             <div style={{paddingBottom: 30}} className="flex flex-col items-center justify-center">
@@ -236,7 +236,7 @@ function ContentPage({ dataRanked, dataSummoner, dataMastery }) {
                                     {validarMastery(dataMastery[2].championLevel)}
                                 </div>
                                 <Typography variant="h5" className="pt-2 pr-2 uppercase" style={{fontWeight: 800, color:'#f44336'}}>{validarChampName(dataMastery[2].championId)}</Typography>
-                                <Typography variant="h5" className="pt-2 pr-2"  style={{fontWeight: 800, color:'#f44336'}}>{dataMastery[2].championPoints} pts</Typography>
+                                <Typography variant="h5" className="pt-2 pr-2"  style={{fontWeight: 800, color:'#f44336'}}>{dataMastery[2].championPoints.toLocaleString()} pts</Typography>
                             </div>
 
                         </div>
